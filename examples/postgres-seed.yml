@@ -1,0 +1,39 @@
+database:
+  type: postgresql
+  host: ${PG_HOST}
+  port: 5432
+  username: ${PG_USER}
+  password: ${PG_PASSWORD}
+  database: ${PG_DATABASE}
+
+options:
+  clearBeforeSeeding: true
+
+seeds:
+  - name: users
+    options:
+      identityField: email
+    data:
+      - id: 1
+        name: John Doe
+        email: john@example.com
+        role: admin
+        created_at: "2023-08-15 00:00:00"
+      - id: 2
+        name: Jane Smith
+        email: jane@example.com
+        role: user
+        created_at: "2023-08-16 00:00:00"
+  
+  - name: products
+    data:
+      - id: 1
+        name: Product A
+        price: 19.99
+        category: electronics
+        in_stock: true
+      - id: 2
+        name: Product B
+        price: 29.99
+        category: furniture
+        in_stock: false
