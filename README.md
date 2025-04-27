@@ -6,10 +6,6 @@
 
 > A powerful, flexible CLI tool for effortlessly seeding databases from YAML or JSON configuration files. Perfect for development, testing environments, and CI/CD pipelines.
 
-<p align="center">
-  <img src="/api/placeholder/800/400" alt="seed-smith visualization" />
-</p>
-
 ## ✨ Features
 
 - **Multi-database Support**: Seamlessly works with MongoDB and PostgreSQL
