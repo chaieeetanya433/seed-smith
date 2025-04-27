@@ -1,7 +1,7 @@
 {
-  "name": "db-seed",
+  "name": "seedsmith",
   "version": "1.0.0",
-  "description": "db-seed, A CLI tool to seed databases from YAML or JSON files",
+  "description": "seedsmith - A CLI tool to seed databases from YAML or JSON files",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
