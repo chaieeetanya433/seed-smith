@@ -1,4 +1,4 @@
-# 🌱 db-seed
+# 🌱 seed-smith
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -7,7 +7,7 @@
 > A powerful, flexible CLI tool for effortlessly seeding databases from YAML or JSON configuration files. Perfect for development, testing environments, and CI/CD pipelines.
 
 <p align="center">
-  <img src="/api/placeholder/800/400" alt="db-seed visualization" />
+  <img src="/api/placeholder/800/400" alt="seed-smith visualization" />
 </p>
 
 ## ✨ Features
@@ -24,20 +24,20 @@
 
 ```bash
 # Install globally
-npm install -g db-seed
+npm install -g seed-smith
 
 # Run with your config
-db-seed --config seed-config.yml
+seed-smith --config seed-config.yml
 ```
 
 ## 📋 Installation Options
 
 ### Global Installation
 
-Makes db-seed available across all your projects:
+Makes seed-smith available across all your projects:
 
 ```bash
-npm install -g db-seed
+npm install -g seed-smith
 ```
 
 ### Project Installation
@@ -45,7 +45,7 @@ npm install -g db-seed
 Install as a development dependency in your current project:
 
 ```bash
-npm install --save-dev db-seed
+npm install --save-dev seed-smith
 ```
 
 ### Running with npx
@@ -53,7 +53,7 @@ npm install --save-dev db-seed
 Use without installation:
 
 ```bash
-npx db-seed --config seed-config.yml
+npx seed-smith --config seed-config.yml
 ```
 
 ## 🛠️ Command Line Options
@@ -207,21 +207,21 @@ PG_DATABASE=testdb
 ### Testing Environments
 
 ```bash
-NODE_ENV=test db-seed --config test-data.yml
+NODE_ENV=test seed-smith --config test-data.yml
 ```
 
 ### CI/CD Pipelines
 
 ```bash
 # In your CI workflow
-db-seed --config ci-seed.yml --env .env.ci
+seed-smith --config ci-seed.yml --env .env.ci
 ```
 
 ### Development Setup
 
 ```bash
 # Add to your package.json scripts
-"setup:dev": "db-seed --config dev-seed.yml"
+"setup:dev": "seed-smith --config dev-seed.yml"
 ```
 
 ## 🔍 Troubleshooting
@@ -231,7 +231,7 @@ db-seed --config ci-seed.yml --env .env.ci
 If you're experiencing connection issues, try using the `--verbose` flag to get more detailed logs:
 
 ```bash
-db-seed --config seed-config.yml --verbose
+seed-smith --config seed-config.yml --verbose
 ```
 
 ### Data Not Being Updated
